@@ -5,7 +5,7 @@ import { ThemeProvider } from "next-themes";
 import MblTabs from "@/components/mbltabs";
 import Navigation from "@/components/navigation";
 import ProfileDetails from "@/components/profileDetails";
-
+import { Analytics } from "@vercel/analytics/next"
 
 const raleway = Raleway({
   subsets: ['latin']
@@ -66,7 +66,9 @@ export default function RootLayout({ children }) {
             <aside className="bg-white dark:bg-[#1A1F25] rounded-lg p-4 hidden md:block">
               <ProfileDetails />
             </aside>
-            <main className="bg-white dark:bg-[#1A1F25] p-4 w-screen md:w-full overflow-x-hidde rounded-lg">{children}</main>
+            <main className="bg-white dark:bg-[#1A1F25] p-4 w-screen md:w-full overflow-x-hidde rounded-lg">{children}
+              <Analytics />
+            </main>
           </div>
         </ThemeProvider>
       </body>
