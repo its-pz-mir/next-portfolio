@@ -1,4 +1,3 @@
-import SlideArrowButton from '@/components/animata/button/slide-arrow-button';
 import { Frown } from 'lucide-react';
 import React from 'react';
 
@@ -17,10 +16,10 @@ const NotFound = () => {
 
             {/* Button */}
             <div className="mt-8 animate-slideUp">
-                <SlideArrowButton primaryColor="#ED250A" text="Back to Home Page"  />
+                <button className='#ED250A' >Back to Home Page</button>
             </div>
 
-                {/* Floating Background Glow
+            {/* Floating Background Glow
                 <div className="absolute w-72 h-72 bg-red-600 opacity-20 blur-3xl rounded-full top-1/3 left-1/4 transform -translate-x-1/2 -translate-y-1/2"></div>
                 <div className="absolute w-72 h-72 bg-blue-500 opacity-20 blur-3xl rounded-full bottom-1/4 right-1/4 transform translate-x-1/2 translate-y-1/2"></div> */}
         </div>
