@@ -42,7 +42,7 @@ export const metadata = {
     type: "website",
   },
 };
-
+<meta name="google-site-verification" content="A-BxlAH2WC12TEBUVIwDX_VbDA0pkssTegACp68SzjY" />
 
 
 export default function RootLayout({ children }) {
