@@ -9,7 +9,7 @@ const Page = () => {
     return (
         <div className='p-4 md:p-8'>
             <div className="title flex items-center mb-6">
-                <h2 className="text-2xl md:text-3xl lg:text-4xl uppercase font-bold mr-4">Old Work</h2>
+                <h2 className="text-2xl md:text-3xl lg:text-4xl uppercase font-bold mr-4">Work</h2>
                 <span className="bg-[#ED250A] w-32 md:w-48 lg:w-60 h-[3px] block rounded-full"></span>
             </div>
             <div className="fiverr-work grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><div className="basic bg-[#FFE3BF] px-6 py-8 rounded-2xl shadow-lg text-center">
