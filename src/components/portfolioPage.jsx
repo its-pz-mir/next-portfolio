@@ -51,7 +51,7 @@ const PortfolioPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                 {filteredData.map((data, index) => (
                     <div key={index} className="relative w-[300px] h-[180px] lg:w-[400px] lg:h-[230px] bg-[#FFE3BF] project rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
-                        <Link href={data?.link}  >
+                        <Link href={data.link}  >
                             <Image src={data?.image} width={10000} height={10000} className='w-full h-[130px] lg:h-[180px] object-cover' alt='Project Image' />
                         </Link>
                         <div className="desc pl-3">
