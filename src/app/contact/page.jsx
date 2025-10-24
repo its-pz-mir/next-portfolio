@@ -1,48 +1,87 @@
-import Image from 'next/image'
-import React from 'react'
+'use client'
+import React, { useState } from "react";
 
-export const metadata = {
-    title: "Contact | Usman Shouket",
-    description: "Contact with Usman Shouket — a passionate MERN stack web developer and digital marketer for any type of Assistance.",
+const ContactForm = () => {
+    const [showToast, setShowToast] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+
+        await fetch("https://formsubmit.co/usmanshouket256@gmail.com", {
+            method: "POST",
+            body: formData,
+        });
+
+        // Show toast
+        setShowToast(true);
+
+        // Hide toast after 3 seconds
+        setTimeout(() => setShowToast(false), 3000);
+
+        // Clear form
+        e.target.reset();
+    };
+
+    return (
+        <div className="relative">
+
+            {/* ✅ Toast */}
+            {showToast && (
+                <div className="fixed top-5 right-5 bg-green-600 text-white px-4 py-2 rounded-md shadow-lg animate-fadeIn">
+                    ✅ Message Sent Successfully!
+                </div>
+            )}
+
+            <form
+                onSubmit={handleSubmit}
+                className="max-w-2xl mx-auto bg-[#FFEED9] p-6 md:p-8 rounded-2xl shadow-lg dark:bg-[#1A1A1A] dark:border dark:border-gray-700"
+            >
+                <input type="hidden" name="_captcha" value="false" />
+                <h3 className="text-xl font-bold mb-6 uppercase dark:text-gray-100">Send me a Message</h3>
+                {/* Name */}
+                <div className="mb-5">
+                    <label className="block mb-2 text-gray-700 dark:text-gray-300">Your Name</label>
+                    <input
+                        type="text"
+                        name="name"
+                        required
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#ED250A] dark:bg-[#141414] dark:border-gray-700 dark:text-gray-100"
+                    />
+                </div>
+
+                {/* Email */}
+                <div className="mb-5">
+                    <label className="block mb-2 text-gray-700 dark:text-gray-300">Your Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        required
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#ED250A] dark:bg-[#141414] dark:border-gray-700 dark:text-gray-100"
+                    />
+                </div>
+
+                {/* Message */}
+                <div className="mb-6">
+                    <label className="block mb-2 text-gray-700 dark:text-gray-300">Message</label>
+                    <textarea
+                        name="message"
+                        rows="5"
+                        required
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#ED250A] dark:bg-[#141414] dark:border-gray-700 dark:text-gray-100"
+                    ></textarea>
+                </div>
+
+                {/* Submit Button */}
+                <button
+                    type="submit"
+                    className="w-full bg-[#ED250A] text-white py-3 cursor-pointer rounded-lg font-semibold hover:bg-[#c81f08] transition-all"
+                >
+                    Send Message
+                </button>
+            </form>
+        </div>
+    );
 };
 
-const Page = () => {
-    return (
-        <div className="p-4 md:p-8">
-            {/* Title */}
-            <div className="title flex items-center mb-6">
-                <h2 className="text-2xl md:text-3xl lg:text-4xl uppercase font-bold mr-4">Contact</h2>
-                <span className="bg-[#ED250A] w-32 md:w-48 lg:w-60 h-[3px] block rounded-full"></span>
-            </div>
-
-            {/* Contact Details */}
-            <div className="contact-details grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="phone bg-[#FFEED9] px-6 py-8 rounded-2xl shadow-lg">
-                    <div className='flex items-center'>
-                        <Image src={"/icons/phone2.svg"} width={20} height={20} alt='Email' />
-                        <p className='font-semibold uppercase text-2xl ml-8 dark:text-gray-800'>Phone</p>
-                    </div>
-                    <div className='mt-4'>
-                        <p className="text-lg  text-gray-800 ml-12">+92 3204818484</p>
-                        <p className="text-lg text-gray-800 ml-12">+92 3324815151</p>
-                    </div>
-                </div>
-                <div className="mail bg-[#FFEED9] px-6 py-8 rounded-2xl shadow-lg">
-                    <div className='flex items-center'>
-                        <Image src={"/icons/mail2.svg"} width={30} height={30} alt='Email' />
-                        <p className='font-semibold uppercase text-2xl dark:text-gray-800 ml-8'>Mail</p>
-                    </div>
-                    <div className='mt-4'>
-                        <p className=" text-gray-800 ml-12 break-words">usmanshouket256@gmail.com</p>
-                    </div>
-                </div>
-
-            </div>
-
-            {/* Contact Form */}
-
-        </div>
-    )
-}
-
-export default Page
+export default ContactForm;
