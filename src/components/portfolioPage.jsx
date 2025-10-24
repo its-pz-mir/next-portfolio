@@ -8,10 +8,10 @@ const categories = ["All", "React", "Next", "Mern"];
 
 
 const portfolioData = [
-    { no: 1, title: "Project 1", category: "React", link: "/project1.png", image: "/projects/first.jpg" },
-    { no: 2, title: "Project 2", category: "Next", link: "/project2.png", image: "/projects/second.jpg" },
-    { no: 3, title: "Project 3", category: "React", link: "/project3.png", image: "/projects/third.jpg" },
-    { no: 4, title: "Project 4", category: "Next", link: "https://new-mu-three.vercel.app/", image: "/projects/fourth.png" },
+    { no: 1, title: "Project 1", category: "React", link: "/project1.png", image: "/projects/first.JPG" },
+    { no: 2, title: "Project 2", category: "Next", link: "/project2.png", image: "/projects/second.JPG" },
+    { no: 3, title: "Project 3", category: "React", link: "/project3.png", image: "/projects/third.JPG" },
+    { no: 4, title: "Project 4", category: "Next", link: "https://new-mu-three.vercel.app/", image: "/projects/fourth.PNG" },
     { no: 5, title: "Project 5", category: "Mern", link: "/project5.png", image: "/projects/fifth.png" },
 ];
 const PortfolioPage = () => {
