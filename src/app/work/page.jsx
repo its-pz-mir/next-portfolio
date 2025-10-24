@@ -20,7 +20,7 @@ const Page = () => {
                         <span className="text-red-600 text-lg">•</span> Functional Website
                     </li>
                     <li className="desc flex items-center gap-2">
-                        <span className="text-red-600 text-lg">•</span> 1-3 Page
+                        <span className="text-red-600 text-lg">•</span> 1-5 Pages
                     </li>
                     <li className="desc flex items-center gap-2">
                         <span className="text-red-600 text-lg">•</span> Content Upload
@@ -35,25 +35,33 @@ const Page = () => {
                         <span className="text-red-600 text-lg">•</span> Hosting Setup
                     </li>
                 </ul>
-                <button className="btn bg-[#ED250A] hover:bg-red-700 transition duration-300 text-white font-medium rounded-full shadow-lg px-6 py-2 mt-6">
-                    Order Now
-                </button>
+                <div className='mt-8'>
+                    <a
+                        href="https://www.fiverr.com/osmandev01/build-modern-frontend-or-full-stack-web-applications-using-react-next-and-mern?context_referrer=tailored_homepage_perseus&source=recently_viewed_gigs&ref_ctx_id=bbd71ef9d72a407f8a3a817773b42a20&context=recommendation&pckg_id=1&pos=1&context_alg=recently_viewed&seller_online=true&imp_id=8a962925-18ea-4718-94c5-13b35a702c9a"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-[#ed250a] hover:bg-red-700 px-4 py-2 mt-3 uppercase rounded-full text-white text-center"
+                    >
+                        Order Now
+                    </a>
+                </div>
+
             </div>
 
                 <div className="standard bg-[#F2F7FC] px-6 py-8 rounded-2xl shadow-lg text-center">
                     <h3 className="title text-2xl font-semibold font-serif text-gray-900">Standard</h3>
-                    <h3 className="price font-bold text-4xl text-gray-900 mt-2">$280</h3>
+                    <h3 className="price font-bold text-4xl text-gray-900 mt-2">$120</h3>
                     <ul className="mt-6 space-y-2 text-gray-800 text-left pl-6">
                         <li className="desc flex items-center gap-2">
                             <span className="text-red-600 text-lg">•</span> Functional Website
                         </li>
                         <li className="desc flex items-center gap-2">
-                            <span className="text-red-600 text-lg">•</span> 1 Page
+                            <span className="text-red-600 text-lg">•</span> 5 - 10 Pages
                         </li>
                         <li className="desc flex items-center gap-2">
                             <span className="text-red-600 text-lg">•</span> Content Upload
                         </li>
-                        <li className="desc flex items-center gap-2 line-through text-slate-400">
+                        <li className="desc flex items-center gap-2">
                             <span className="text-red-600 text-lg">•</span> Ecommerce Functionality
                         </li>
                         <li className="desc flex items-center gap-2">
@@ -63,19 +71,26 @@ const Page = () => {
                             <span className="text-red-600 text-lg">•</span> Hosting Setup
                         </li>
                     </ul>
-                    <button className="btn bg-[#ED250A] hover:bg-red-700 transition duration-300 text-white font-medium rounded-full shadow-lg px-6 py-2 mt-6">
-                        Order Now
-                    </button>
+                    <div className='mt-8'>
+                        <a
+                            href="https://www.fiverr.com/osmandev01/build-modern-frontend-or-full-stack-web-applications-using-react-next-and-mern?context_referrer=tailored_homepage_perseus&source=recently_viewed_gigs&ref_ctx_id=bbd71ef9d72a407f8a3a817773b42a20&context=recommendation&pckg_id=1&pos=1&context_alg=recently_viewed&seller_online=true&imp_id=8a962925-18ea-4718-94c5-13b35a702c9a"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-[#ed250a] hover:bg-red-700 px-4 py-2 mt-3 uppercase rounded-full text-white text-center"
+                        >
+                            Order Now
+                        </a>
+                    </div>
                 </div>
                 <div className="premium bg-[#FFE3BF] px-6 py-8 rounded-2xl shadow-lg text-center">
                     <h3 className="title text-2xl font-semibold font-serif text-gray-900">Premium</h3>
-                    <h3 className="price font-bold text-4xl text-gray-900 mt-2">$500</h3>
+                    <h3 className="price font-bold text-4xl text-gray-900 mt-2">$250</h3>
                     <ul className="mt-6 space-y-2 text-gray-800 text-left pl-6">
-                        <li className="desc flex items-center gap-27">
-                            <span className="text-red-600 text-lg">•</span> Functional Website
+                        <li className="desc flex items-center gap-2">
+                            <span className="text-red-600 text-lg">•</span>Full Stack Website <span></span>
                         </li>
                         <li className="desc flex items-center gap-2">
-                            <span className="text-red-600 text-lg">•</span> 1 Page
+                            <span className="text-red-600 text-lg">•</span> 5-10 Pages
                         </li>
                         <li className="desc flex items-center gap-2">
                             <span className="text-red-600 text-lg">•</span> Content Upload
@@ -90,35 +105,63 @@ const Page = () => {
                             <span className="text-red-600 text-lg">•</span> Hosting Setup
                         </li>
                     </ul>
-                    <button className="btn bg-[#ED250A] hover:bg-red-700 transition duration-300 text-white font-medium rounded-full shadow-lg px-6 py-2 mt-6">
-                        Order Now
-                    </button>
+                    <div className='mt-8'>
+                        <a
+                            href="https://www.fiverr.com/osmandev01/build-modern-frontend-or-full-stack-web-applications-using-react-next-and-mern?context_referrer=tailored_homepage_perseus&source=recently_viewed_gigs&ref_ctx_id=bbd71ef9d72a407f8a3a817773b42a20&context=recommendation&pckg_id=1&pos=1&context_alg=recently_viewed&seller_online=true&imp_id=8a962925-18ea-4718-94c5-13b35a702c9a"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-[#ed250a] hover:bg-red-700 px-4 py-2 mt-3 uppercase rounded-full text-white text-center"
+                        >
+                            Order Now
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div className=" grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 justify-items-center">
                 {/* Fiverr Box */}
-                <div className="fiverr w-full md:w-[18rem] px-8 py-6 bg-white shadow-current shadow-2xl rounded-xl flex flex-col justify-center items-center space-y-3">
+                <div className="w-full max-w-sm px-8 py-6 bg-white dark:bg-[#1A1F25] shadow-2xl rounded-xl flex flex-col justify-center items-center space-y-4 text-center">
                     <img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Fiverr_Logo_09.2020.svg/1920px-Fiverr_Logo_09.2020.svg.png"
-                        width={100} height={100}
+                        width={100}
+                        height={100}
                         alt="Fiverr Logo"
                     />
-                    <p className="font-semibold text-lg text-center">I am currently active on Fiverr.</p>
-                    <button className="bg-[#ed250a] hover:bg-red-700 px-4 py-2 uppercase rounded-full text-white">Visit my Profile</button>
+                    <p className="font-semibold text-lg text-gray-900 dark:text-white">
+                        I am currently active on Fiverr.
+                    </p>
+                    <a
+                        href="https://www.fiverr.com/osmandev01/build-modern-frontend-or-full-stack-web-applications-using-react-next-and-mern?context_referrer=tailored_homepage_perseus&source=recently_viewed_gigs&ref_ctx_id=bbd71ef9d72a407f8a3a817773b42a20&context=recommendation&pckg_id=1&pos=1&context_alg=recently_viewed&seller_online=true&imp_id=8a962925-18ea-4718-94c5-13b35a702c9a"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-[#ed250a] hover:bg-red-700 px-6 py-2 uppercase rounded-full text-white font-medium shadow-md transition duration-300"
+                    >
+                        Visit my Profile
+                    </a>
                 </div>
 
                 {/* Upwork Box */}
-                <div className="fiverr w-full md:w-[18rem] px-8 py-6 bg-white shadow-current shadow-2xl rounded-xl flex flex-col justify-center items-center space-y-3">
+                <div className="w-full max-w-sm px-8 py-6 bg-white dark:bg-[#1A1F25] shadow-2xl rounded-xl flex flex-col justify-center items-center space-y-4 text-center">
                     <img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Upwork_Logo.svg/1920px-Upwork_Logo.svg.png"
-                        width={100} height={100}
-                        alt="Fiverr Logo"
+                        width={100}
+                        height={100}
+                        alt="Upwork Logo"
                     />
-                    <p className="font-semibold text-lg text-center">I am currently active on Upwork.</p>
-                    <button className="bg-[#ed250a] hover:bg-red-700 px-4 py-2 uppercase rounded-full text-white">Visit my Profile</button>
+                    <p className="font-semibold text-lg text-gray-900 dark:text-white">
+                        I am currently active on Upwork.
+                    </p>
+                    <a
+                        href="https://www.upwork.com/freelancers/~0164b4379e21eea24c?mp_source=share"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-[#ed250a] hover:bg-red-700 px-6 py-2 uppercase rounded-full text-white font-medium shadow-md transition duration-300"
+                    >
+                        Visit my Profile
+                    </a>
                 </div>
             </div>
+
 
 
         </div>

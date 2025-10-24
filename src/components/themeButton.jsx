@@ -15,7 +15,7 @@ const ThemeButton = () => {
   if (!mounted) return null; // 👈 Prevents hydration error
 
   return (
-    <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+    <button aria-label="Mode Changing" onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
       {theme === "dark" ? (
         <div className="bg-[#EBF2FA] p-3 rounded-full shadow-2xl border border-slate-200">
           <CiLight className="text-black text-3xl cursor-pointer" />

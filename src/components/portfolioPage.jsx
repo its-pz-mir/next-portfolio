@@ -11,7 +11,7 @@ const portfolioData = [
     { no: 1, title: "Project 1", category: "React", link: "/project1.png", image: "/projects/first.jpg" },
     { no: 2, title: "Project 2", category: "Next", link: "/project2.png", image: "/projects/second.jpg" },
     { no: 3, title: "Project 3", category: "React", link: "/project3.png", image: "/projects/third.jpg" },
-    { no: 4, title: "Project 4", category: "Next", link: "/project4.png", image: "/projects/fourth.png" },
+    { no: 4, title: "Project 4", category: "Next", link: "https://new-mu-three.vercel.app/", image: "/projects/fourth.png" },
     { no: 5, title: "Project 5", category: "Mern", link: "/project5.png", image: "/projects/fifth.png" },
 ];
 const PortfolioPage = () => {
@@ -36,6 +36,7 @@ const PortfolioPage = () => {
                 {categories.map((category, index) => (
                     <button
                         key={index}
+                        aria-label='Social media Icons'
                         onClick={() => setActiveCategory(category)}
                         className={`text-md md:text-base lg:text-xl font-medium transition cursor-pointer duration-300 
                             ${activeCategory === category ? 'text-[#ED250A] font-bold' : 'text-gray-500 dark:text-gray-200'}
@@ -50,7 +51,7 @@ const PortfolioPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                 {filteredData.map((data, index) => (
                     <div key={index} className="relative w-[300px] h-[180px] lg:w-[400px] lg:h-[230px] bg-[#FFE3BF] project rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
-                        <Link href={data?.link} >
+                        <Link href={data?.link}  >
                             <Image src={data?.image} width={10000} height={10000} className='w-full h-[130px] lg:h-[180px] object-cover' alt='Project Image' />
                         </Link>
                         <div className="desc pl-3">
