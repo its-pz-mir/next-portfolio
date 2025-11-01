@@ -4,6 +4,10 @@ import React from "react";
 export const metadata = {
     title: "Resume | Usman Shouket",
     description: "Learn more about Usman Shouket — a passionate MERN stack web developer and digital marketer.",
+      robots: {
+    index: true,
+    follow: true,
+  }
 };
 
 

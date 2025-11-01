@@ -16,15 +16,10 @@ const raleway = Raleway({
 export const metadata = {
   title: "Home | Usman Shoukat - Full Stack Developer",
   description: "Portfolio of Usman Shoukat, a MERN stack web developer from Pakistan.",
-  keywords: [
-    "Usman Shoukat",
-    "MERN Stack Developer",
-    "Full Stack Developer Pakistan",
-    "React.js",
-    "Node.js",
-    "Web Design",
-    "Digital Marketing"
-  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     title: "Usman Shoukat | Full Stack Developer",
     description: "Explore my web development projects and digital marketing expertise.",
@@ -42,6 +37,7 @@ export const metadata = {
     type: "website",
   },
 };
+
 <meta name="google-site-verification" content="A-BxlAH2WC12TEBUVIwDX_VbDA0pkssTegACp68SzjY" />
 
 

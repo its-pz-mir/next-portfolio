@@ -3,6 +3,10 @@ import React from 'react'
 export const metadata = {
     title: "Work | Usman Shouket",
     description: "Work With Usman Shouket — a passionate MERN stack web developer and digital marketer.",
+    robots: {
+        index: true,
+        follow: true,
+    }
 };
 
 const Page = () => {
